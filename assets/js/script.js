@@ -42,7 +42,7 @@ function getUsers() {
 
 function filterData(searchTerm) {
 	userList.forEach(item => {
-		if(item.innerText.tolowercase().includes(searchTerm.tolowercase())){
+		if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())){
 			item.classList.remove('hide')
 		}else{
 			item.classList.add("hide")
