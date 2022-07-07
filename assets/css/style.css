@@ -100,18 +100,12 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 23.24%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,14 +113,67 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+body, .container, main {  height: 100vh;  }
 
+.wrapper {
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3e57db;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
 
+h3 {
+  padding: 32px 0 10px;
+  font-weight: 600;
+  text-transform: capitalize; 
+}
 
+p {  font-size: 13px; }
 
+.filter {
+  padding: 9px 13.5%;
+  margin: 21px 0;
+  border-radius: 20px;
+  background-color: #2b3e99;
+}
 
+.top-content {
+  margin-left: 20px;
+  color: #fff;
+}
 
+ul {
+  background-color: #fff;
+  overflow-y: auto;
+}
 
+li {
+  padding: 20px 0 25px 7%;
+  display: flex;
+}
 
+figure {  flex-basis: 18%;  }
+img {  border-radius: 30px; } 
+
+.info {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+span.name {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+span.location {
+  padding: 10px 0 0 0;
+  font-size: 13px;
+  text-transform: capitalize;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -134,14 +181,7 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
 =================================*/ 
 
