@@ -3,18 +3,18 @@
 */
 const users = document.querySelector('ul')
 const filter = document.querySelector('.filter')
-// const userList = []
+const userList = []
 
 getUsers()
+
+filter.addEventListener('input', (e) => filterData(e.target.value))
 
 function getUsers() {
   fetch(`https://randomuser.me/api?results=20`)
     .then((res) => res.json())
     .then((data) => {
-			console.log(data);
 
 			data.results.forEach(user => {
-				console.log(user)
 
 				const li = document.createElement('li');
 				const image = user.picture.medium;
@@ -23,7 +23,7 @@ function getUsers() {
 				const state = user.location.state;
 				const country = user.location.country;
 
-				// userList.push(li)
+				userList.push(li)
 
 				const usersInnerHTML = `
 					<figure><img src="${image}" alt="User Profile"></figure>
@@ -38,6 +38,16 @@ function getUsers() {
 
 			});
   });
+}
+
+function filterData(searchTerm) {
+	userList.forEach(item => {
+		if(item.innerText.tolowercase().includes(searchTerm.tolowercase())){
+			item.classList.remove('hide')
+		}else{
+			item.classList.add("hide")
+		}
+	})
 }
 
 // function fetchUsers(){
