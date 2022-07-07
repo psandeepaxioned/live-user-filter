@@ -116,7 +116,6 @@ li {
 body, .container, main {  height: 100vh;  }
 
 .content {
-  height: 80vh;
   width: 23.24%;
   border-radius: 5px;
   position: absolute;
@@ -127,22 +126,32 @@ body, .container, main {  height: 100vh;  }
 }
 
 h3 {
-  padding: 32px 0 10px;
+  margin: 0 0 10px 20px;
   font-weight: 600;
   text-transform: capitalize; 
 }
 
-p {  font-size: 13px; }
+p {  
+  font-size: 13px;
+  padding-left: 20px;
+}
 
 .filter {
+  width: 64%;
   padding: 9px 13.5%;
-  margin: 21px 0;
+  margin: 21px auto;
   border-radius: 20px;
   background-color: #2b3e99;
+  display: block;
+  border-style: none;
+}
+.filter:focus{
+  outline: none;
+  color: #fff;
 }
 
 .top-content {
-  padding-left: 20px;
+  padding: 32px 0 15px;
   background-color: #3e57db;
   color: #fff;
 }
@@ -154,6 +163,7 @@ ul {
 }
 
 li {
+  border-bottom: 1px solid #eee;
   padding: 20px 0 25px 7%;
   display: flex;
 }
