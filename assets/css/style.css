@@ -115,13 +115,13 @@ li {
 =================================*/
 body, .container, main {  height: 100vh;  }
 
-.wrapper {
+.content {
+  width: 23.24%;
   border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #3e57db;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -141,7 +141,8 @@ p {  font-size: 13px; }
 }
 
 .top-content {
-  margin-left: 20px;
+  padding-left: 20px;
+  background-color: #3e57db;
   color: #fff;
 }
 
@@ -173,6 +174,9 @@ span.location {
   padding: 10px 0 0 0;
   font-size: 13px;
   text-transform: capitalize;
+}
+li.hide{
+  display: none;
 }
 /*=================================
   main styling ends here
