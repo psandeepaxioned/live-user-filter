@@ -5,12 +5,14 @@ const users = document.querySelector('ul')
 const filter = document.querySelector('.filter')
 const userList = []
 
+users.innerText='';
+
 getUsers()
 
 filter.addEventListener('input', (e) => filterData(e.target.value))
 
 function getUsers() {
-  fetch(`https://randomuser.me/api?results=20`)
+  fetch(`https://randomuser.me/api?results=50`)
     .then((res) => res.json())
     .then((data) => {
 
